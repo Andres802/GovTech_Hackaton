@@ -14,12 +14,19 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/GovTech', strict_slashes=False)
-def hbnb():
+@app.route('/govtech', strict_slashes=False)
+def govtech():
     """
         function to return GovTech
     """
     return render_template('base.html')
 
+def sample():
+    """
+        function sample page
+    """
+    return render_template('sample.html')
+
+
 if __name__ == '__main__':
-        app.run(host='0.0.0.0', port=5001)
+        app.run(host='0.0.0.0', port=5002)
