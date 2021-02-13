@@ -21,6 +21,7 @@ def govtech():
     """
     return render_template('base.html')
 
+@app.route('/sample', strict_slashes=False)
 def sample():
     """
         function sample page
